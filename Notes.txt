@@ -1,0 +1,7 @@
+QuerySets are only evaluated in the following cases:
+• The first time you iterate over them
+• When you slice them, for instance, Post.objects.all()[:3]
+• When you pickle or cache them
+• When you call repr() or len() on them
+• When you explicitly call list() on them
+• When you test them in a statement, such as bool(), or, and, or if
